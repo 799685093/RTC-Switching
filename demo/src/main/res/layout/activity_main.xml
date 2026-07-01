@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btn_init"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="初始化" />
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册引擎" />
+    <Button
+        android:id="@+id/btn_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="切换" />
+    <Button
+        android:id="@+id/btn_extension"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="拓展模块" />
+    <Button
+        android:id="@+id/btn_join"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="入房" />
+    <Button
+        android:id="@+id/btn_leave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="离开" />
+    <Button
+        android:id="@+id/btn_destroy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="销毁" />
+
+    <Button
+        android:id="@+id/btn_toggle_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开/关闭摄像头" />
+    <Button
+        android:id="@+id/btn_toggle_mic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打卡/关闭麦克风" />
+
+    <Button
+        android:id="@+id/btn_mute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="静音" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:text="结果："/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/tv_result"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:text="" />
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
